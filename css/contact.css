@@ -1,0 +1,184 @@
+* {
+    font-family: Alata;
+  }
+  
+body {
+    position: relative;
+    background: linear-gradient(to right top, rgba(251, 255, 0, 0.8), rgb(255, 117, 117));
+}
+
+.bg{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+ }
+
+.tebel-banget {
+    font-weight: 900;
+}
+
+.tebel-sedang {
+    font-weight: bold;
+}
+
+.desc{
+    max-width: 400px;
+}
+
+.button {
+    background-color: #F40000;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: rgb(250, 246, 10);
+    color: red;
+}
+
+.ginsta img, .wapp img{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.insta, .whatsapp {
+    display:inline-block;
+    margin: 0px 20px;
+    text-align: center;
+}
+
+.whatsapp .linki {
+    padding: 10px 30px;
+    background-color: red;
+    border: none;
+    text-decoration: none;
+    border-radius: 30px;
+    color: white;
+}
+
+.whatsapp .linki:hover {
+    background-color: rgb(250, 154, 10);
+    color: white;
+    padding: 15px 30px;
+    transition: 0.4s;
+}
+
+.insta {
+    margin-left: 360px;
+}
+
+.whatsapp {
+    margin-left: -20px;
+}
+
+.insta .linki {
+    padding: 10px 30px;
+    background-color: red;
+    border: none;
+    text-decoration: none;
+    border-radius: 30px;
+    color: white;
+}
+
+.insta .linki:hover {
+    background-color: rgb(250, 154, 10);
+    color: white;
+    padding: 15px 30px;
+    transition: 0.4s;
+}
+
+.item {
+    margin-top: 20px;
+    margin-bottom:95px;
+}
+
+.contact {
+    margin-top:50px;
+    text-align: center;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: rgb(250, 154, 10);
+    border-radius:20px;
+    color: white;
+}
+
+.roket {
+    height: 300px;
+    width: 300px;
+    position:absolute;
+    margin-left: 66%;
+    margin-top: 60px;
+}
+
+.saly {
+    height: 350px;
+    width: 350px;
+    position:absolute;
+    margin-top: 20px;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height:300px;
+    background-color: orange;
+    padding: 20px 0px;
+    padding-right: 30px;
+    padding-left: -20px;
+    border-radius: 20px;
+}
+
+.btn-login .box-login input:hover{
+   background: rgba(10, 10, 10,s 0.5);
+ }
+
+ .btn-login {
+   margin-left: 10px;
+   margin-bottom: 20px;
+   background: none;
+   border: 2px solid white;
+   width: 50%;
+   padding: 10px;
+   color: white;
+   font-size: 18px;
+   letter-spacing: 3px;
+   cursor: pointer;
+   }
+
+ .btn-login:hover{
+   background: rgba(12, 30, 15, 0.5);
+ }
+
+ .box-login {
+    display: flex;
+    margin: 10px;
+    border-bottom: 2px solid white;
+    padding: 5px 0;
+  }
+
+  .box-login i {
+    font-size: 23px;
+    color: white;
+    padding: 5px 0;
+  }
+
+  .box-login input {
+    width: 100%;
+    padding: 5px 0;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+  }
+  .box-login input::placeholder {
+    color: white;
+  }

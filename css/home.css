@@ -1,0 +1,390 @@
+* {
+  font-family: Alata;
+}
+
+body {
+  position: relative;
+  background: linear-gradient(to right top, rgba(251, 255, 0, 0.8), rgb(255, 117, 117));
+}
+
+.bg{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.tebel-banget {
+  font-weight: 900;
+}
+
+.tebel-sedang {
+  font-weight: bold;
+}
+
+.desc{
+  max-width: 400px;
+}
+
+.button {
+  background-color: #F40000;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: rgb(250, 246, 10);
+  color: red;
+}
+
+.linki{
+  font-size: 37px;
+  text-align:center;
+  color: white;
+  text-decoration: none;
+  padding:10px 17px;
+}  
+  
+.keunggulan {
+  box-shadow: #F40000;
+}
+
+.gambar{
+  display: none;
+}
+
+.img{
+  width: 500px;
+  z-index: -1;
+}
+
+.judul {
+  text-align: center;
+  width: 100%;
+  padding: 10px 10px;
+  background-color: rgb(250, 154, 10);
+  border-radius:20px;
+  color: white;
+}
+
+.murahin, .terjangkau, .mulai {
+  display: inline-block;
+  text-align: center;
+  margin-left: 90px;
+
+}
+
+.murahin {
+  height: 200px;
+  width: 280px;
+  margin-left: 10px;
+  margin-right: 90px;
+  border-radius: 20px;
+}
+
+.murah .murahin img{
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.terjangkau {
+  height: 200px;
+  width: 300px;
+  margin-left: 0px;
+  border-radius: 20px;
+}
+
+.murah .terjangkau img {
+  height: 200px;
+  width: 220px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mulai {
+  height: 200px;
+  width: 280px;
+  margin-right: 5px;
+  border-radius: 20px;
+}
+
+.murah .mulai img{
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.deskripsi .jabar h2, p {
+  display: inline-block;
+}
+
+.jabar {
+  height : 300px;
+  width : 650px;
+  padding : 30px 30px; 
+  float: right;
+  border-radius: 20px;
+  font-family: Alata;
+}
+
+/*Testimoni*/
+.adik , .kakak, .abang {
+  display : inline-block;
+  margin : 20px 20px;
+  text-align : center;
+  font-size : 16px;
+}
+
+.adik {
+  width: 315px;
+  height: 200px;
+}
+
+.adik img {
+  height: 250px;
+  width: 200px;
+  border-radius: 30px;
+}
+
+.kakak {
+  width: 300px;
+  height: 200px;
+}
+
+.kakak img {
+  height: 250px;
+  width: 180px;
+  border-radius: 30px;
+}
+
+.abang {
+  width: 300px;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.abang img {
+  height: 250px;
+  width: 200px;
+  border-radius: 30px;
+}
+
+.deskripsi img {
+  padding-top: -10px;
+  height: 250px;
+  width: 400px;
+}
+
+.background {
+  width: 100%;
+  background: linear-gradient(to right top, rgba(255, 187, 0, 0.938), rgba(255, 115, 0, 0.959));;
+  border-radius: 150px;
+}
+
+.gado, .ayam {
+  margin: 20px;
+}
+
+.gado {
+  height: 250px;
+  width: 50%;
+  background: linear-gradient(to right top, rgba(255, 187, 0, 0.938), rgba(255, 115, 0, 0.959));;
+  border-radius: 30px;
+  display: inline-block;
+  margin-left: 50%;
+}
+
+.hargagado {
+  height: 55px;
+  width: 280px;
+  background-color: #F40000;
+  margin-left: 20px;
+  border-radius: 30px;
+  box-shadow: 20px ;
+  text-align: center;
+  transition: 0.3s;
+  border: none;
+  color: white;
+}
+
+.hargagado:hover {
+  box-shadow: 20px #ffff;
+  transition: 0.3s;
+  background-color: rgb(250, 246, 10);
+  height: 58px;
+  width: 285px;
+  cursor: pointer;
+  color: red;
+}
+
+.hargagado h1 {
+  text-align:center;
+  font-size: 35px;
+  padding: 5px 5px;
+}
+
+.hargaayam h1 {
+  text-align:center;
+  font-size: 35px;
+  padding: 5px 5px;
+}
+
+.desgado {
+  text-align: justify;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.desayam {
+  text-align: justify;
+  padding : 15px 20px;
+}
+
+.ungkep {
+  height: 200px;
+  width: 12%;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 150px;
+  padding: 20px 20px;
+  background-color: rgba(255, 115, 0, 0.959);
+  border-radius: 40px;
+}
+
+.sayurgado {
+  height: 200px;
+  width: 15%;
+  position: absolute;
+  margin-top: -250px;
+  margin-left: 130px;
+  padding: 20px 20px;
+  background-color: rgba(255, 115, 0, 0.959);
+  border-radius: 40px;
+}
+
+.panah {
+  height: 80px;
+  width: 7%;
+  position: absolute;
+  margin-left: 380px;
+  margin-top: 100px;
+}
+
+.panah2 {
+  height: 80px;
+  width: 7%;
+  position: absolute;
+  margin-left: 380px;
+  margin-top: -200px;
+}
+
+.ayam {
+  height: 250px;
+  width: 50%;
+  background: linear-gradient(to right top, rgba(255, 187, 0, 0.938), rgba(255, 115, 0, 0.959));
+  border-radius: 30px;
+  margin-left: 50%;
+}
+
+.hargaayam {
+  height: 55px;
+  width: 280px;
+  background-color: #F40000;
+  margin-top: -20px;
+  margin-left: 20px;
+  border-radius: 30px;
+  box-shadow: 20px ;
+  text-align: center;
+  transition: 0.3s;
+  border: none;
+  color: white;
+}
+
+
+.hargaayam:hover {
+  box-shadow: 20px #ffff;
+  background-color: rgb(250, 246, 10);
+  height: 58px;
+  width: 285px;
+  cursor: pointer;
+  color: red;
+}
+
+.image1 img, .image2 img, .image3 img{
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.point1 {
+  height: 340px;
+  width: 52vh;
+  text-align: justify;
+  background-color: orange;
+  padding: 20px 30px;
+  border-radius: 30px;
+}
+
+.point1 h3 {
+  text-align:center;
+}
+
+.point2 {
+  height: 340px;
+  width: 52vh;
+  text-align: justify;
+  background-color: orange;
+  padding: 20px 30px;
+  border-radius: 30px;
+}
+
+.point2 h3 {
+  text-align:center;
+}
+
+.point3 {
+  height: 340px;
+  width: 52vh;
+  text-align: justify;
+  background-color: orange;
+  padding: 20px 30px;
+  border-radius: 30px;
+}
+
+.point3 h3 {
+  text-align:center;
+}
+
+.point1, .point2, .point3 {
+  display: inline-block;
+  margin: 28px 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
