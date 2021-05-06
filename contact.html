@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" media= "screen" href="css/contact.css">
     <link href="bs5/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/respons_three.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+    <link href="/path/to/tailwind.css" rel="stylesheet">
     <link rel="icon" href="assets/[Final] Enyak'ers.png">
     
     <title>Enyakers</title>
@@ -22,7 +23,7 @@
     <nav class="navbar navbar-expand-lg navbar-light mt-3 fixed-top" id="navbar">
         <div class="container">
             <div class= "brand">
-                <h1 style = "font-family: Satisfy ; font-weight: bold;">Enyak'ers</h1>
+                <h1 style = "font-family: Alata ; font-weight: bold; color: rgb(255, 102, 0);"><strong>Enyak'ers_</strong></h1>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,10 +48,9 @@
         </div>
     </nav>
 
-    <div class="container">
 
-       <img src="assets/roket.png" class="roket">
-        <img src="assets/Saly-6.png" class="saly">
+    <div class="container">
+       
         <br><br><br>
         <div class = "shadow contact">
             <h2>Contact Us</h2>
@@ -60,55 +60,69 @@
     <br><br>
 
     <div class="container">
+        <div class="alert alert-success alert-dismissible fade show my-alert d-none" role="alert">
+            <strong>Terima kasih sarannya!</strong> Masukkan anda sudah kami terima.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          
             <form class="shadow contact_form" action="" method="post" name="contact_form">
                 <ol>
                     <div class="box-login">
                         <i class="fas fa-envelope-open-text"></i>
-                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Name" name="Nama" />
                       </div>
                 </ol>
 
                 <ol>
                       <div class="box-login">
                         <i class="fas fa-lock"></i>
-                        <input type="text" placeholder="Email">
+                        <input id="email" type="email" placeholder="Email" name="Email"/>
                       </div>
                 </ol>
 
                 <ol>
                       <div class="box-login">
                         <i class="fas fa-lock"></i>
-                        <input name="message" cols="40" rows="6" placeholder="Order atau keluhan..." class="massage"></input>
+                        <input name="Keluhan" cols="40" rows="6" placeholder="Order atau Masukan..." class="massage"></input>
                       </div>
                 </ol>
 
-                <ol>
-                    <button type="submit" name="login" class="shadow btn-login auto-save">Kirim</button>
-                </ol>
-            </form>
-
-            <div class = "item">
-                <div class = "insta">
+                <ol class = "icon">
+                    <button type="submit" name="login" class="shadow btn-login auto-save" data-bs-toggle="Kirim" title="Kirim" data-bs-content="Data anda akan langsung terkirim">Kirim</button>
+                    <button class="btn btn-danger btn-loading d-none" type="button" disabled>
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        <span class="visually-hidden">Loading...</span>
+                    </button>
+               
+                <div class = "item">
                     <div class = "ginsta">
-                        <img src = "assets/insta.png">
+                        <a href="https://www.instagram.com/enyakitchen_/" title="Instagram">
+                        <img type="button" src = "assets/insta.png" alt="instagram">
+                        </a>
                     </div>
-                    
-                    <a class ="shadow linki" href="https://www.instagram.com/enyakitchen_/">@enyakitchen</a>&nbsp;
-                </div>
-       
-                <div class="whatsapp">
+
                     <div class="wapp">
-                       <img src ="assets/Watsapp.png">
+                        <a href="https://api.whatsapp.com/send?phone=6285714323727" title="Whatsapp">
+                        <img type="button" src ="assets/Watsapp.png" alt="whatsapp">
+                        </a>
                     </div>
-       
-                    <a class="shadow linki" href="https://api.whatsapp.com/send?phone=6285714323727">+62-857-1432-3727</a>&nbsp;
+
+                    <div class="face">
+                        <a title="Facebook">
+                          <img type="button" src="https://img.icons8.com/small/64/000000/facebook.png" alt="Facebook">
+                        </a>
+                    </div>
                 </div>
-            </div>
+              </ol>
+           </form>
+        <br><br><br>
     </div>
 
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="bs5/dist/js/bootstrap.bundle.js"></script>
+        
         <script src="js/onscroll.js"></script>
-     
+        <script src="js/buttonsend.js"></script>
+
   </body>
 </html>

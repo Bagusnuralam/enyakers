@@ -4,7 +4,8 @@
 
 body {
   position: relative;
-  background: linear-gradient(to right top, rgba(251, 255, 0, 0.8), rgb(255, 117, 117));
+  background: linear-gradient(to right top, #f8af4f, #ffdeaf);
+  background-repeat: no-repeat;
 }
 
 .bg{
@@ -23,7 +24,7 @@ body {
 }
 
 .desc{
-  max-width: 400px;
+  width: 400px;
 }
 
 .button {
@@ -52,6 +53,8 @@ body {
   
 .keunggulan {
   box-shadow: #F40000;
+  display: flex;
+  justify-content: space-around;
 }
 
 .gambar{
@@ -61,6 +64,12 @@ body {
 .img{
   width: 500px;
   z-index: -1;
+  transition-property: width, height;
+  transition-duration: 1s;
+}
+
+.img:hover {
+  width: 550px;
 }
 
 .judul {
@@ -72,11 +81,13 @@ body {
   color: white;
 }
 
+.alasan { width: 100%;}
+
 .murahin, .terjangkau, .mulai {
   display: inline-block;
   text-align: center;
   margin-left: 90px;
-
+  margin-top: 20px;
 }
 
 .murahin {
@@ -93,6 +104,16 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  background-color: orange;
+  border: 5px solid white;
+  border-radius: 30px;
+  transition-property: width, height;
+  transition-duration: 1s;
+}
+
+.murah .murahin img:hover {
+  width: 240px;
+  height: 240px;
 }
 
 .terjangkau {
@@ -108,6 +129,16 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  background-color: orange;
+  border: 5px solid white;
+  border-radius: 30px;
+  transition-property: width, height;
+  transition-duration: 1s;
+}
+
+.murah .terjangkau img:hover {
+  width: 260px;
+  height: 240px;
 }
 
 .mulai {
@@ -123,11 +154,23 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  background-color: orange;
+  border: 5px solid white;
+  border-radius: 30px;
+  transition-property: width, height;
+  transition-duration: 1s;
 }
+
+.murah .mulai img:hover {
+  width: 240px;
+  height: 240px;
+}
+
 
 .deskripsi .jabar h2, p {
   display: inline-block;
 }
+
 
 .jabar {
   height : 300px;
@@ -141,43 +184,56 @@ body {
 /*Testimoni*/
 .adik , .kakak, .abang {
   display : inline-block;
-  margin : 20px 20px;
+  margin : 20px 25px;
   text-align : center;
   font-size : 16px;
+  border-radius: 20px;
+}
+
+.adik p, .kakak p, .abang p {
+  font-size: 15px;
+  padding: 0 20px;
+}
+
+.adik h3, .kakak h3, .abang h3 {
+  font-size: 23px;
 }
 
 .adik {
   width: 315px;
-  height: 200px;
+  height: 450px;
 }
 
 .adik img {
   height: 250px;
   width: 200px;
-  border-radius: 30px;
+  border-radius: 20px;
+  margin-top: 20px;
 }
 
 .kakak {
   width: 300px;
-  height: 200px;
+  height: 450px;
 }
 
 .kakak img {
   height: 250px;
   width: 180px;
-  border-radius: 30px;
+  border-radius: 20px;
+  margin-top: 20px;
 }
 
 .abang {
   width: 300px;
-  height: 200px;
+  height: 450px;
   margin-top: 20px;
 }
 
 .abang img {
   height: 250px;
   width: 200px;
-  border-radius: 30px;
+  border-radius: 20px;
+  margin-top: 20px;
 }
 
 .deskripsi img {
@@ -196,119 +252,87 @@ body {
   margin: 20px;
 }
 
-.gado {
-  height: 250px;
-  width: 50%;
-  background: linear-gradient(to right top, rgba(255, 187, 0, 0.938), rgba(255, 115, 0, 0.959));;
-  border-radius: 30px;
-  display: inline-block;
-  margin-left: 50%;
-}
-
 .hargagado {
   height: 55px;
   width: 280px;
   background-color: #F40000;
-  margin-left: 20px;
+  margin-top: 20px;
   border-radius: 30px;
   box-shadow: 20px ;
   text-align: center;
   transition: 0.3s;
   border: none;
   color: white;
+  border: 5px solid white;
+}
+
+.hargagado a, .hargaayam a {
+  font-size: 30px;
 }
 
 .hargagado:hover {
-  box-shadow: 20px #ffff;
   transition: 0.3s;
   background-color: rgb(250, 246, 10);
   height: 58px;
   width: 285px;
   cursor: pointer;
-  color: red;
 }
 
-.hargagado h1 {
-  text-align:center;
-  font-size: 35px;
-  padding: 5px 5px;
-}
-
-.hargaayam h1 {
-  text-align:center;
-  font-size: 35px;
-  padding: 5px 5px;
-}
-
-.desgado {
+.desgado, .desayam {
   text-align: justify;
-  margin-left: 20px;
-  margin-top: 10px;
-}
-
-.desayam {
-  text-align: justify;
-  padding : 15px 20px;
-}
-
-.ungkep {
-  height: 200px;
-  width: 12%;
-  position: absolute;
-  margin-top: 50px;
-  margin-left: 150px;
-  padding: 20px 20px;
-  background-color: rgba(255, 115, 0, 0.959);
-  border-radius: 40px;
-}
-
-.sayurgado {
-  height: 200px;
-  width: 15%;
-  position: absolute;
-  margin-top: -250px;
-  margin-left: 130px;
-  padding: 20px 20px;
-  background-color: rgba(255, 115, 0, 0.959);
-  border-radius: 40px;
-}
-
-.panah {
-  height: 80px;
-  width: 7%;
-  position: absolute;
-  margin-left: 380px;
-  margin-top: 100px;
-}
-
-.panah2 {
-  height: 80px;
-  width: 7%;
-  position: absolute;
-  margin-left: 380px;
-  margin-top: -200px;
-}
-
-.ayam {
+  padding: 8px 30px;
+  margin: 20px 80px;
   height: 250px;
   width: 50%;
-  background: linear-gradient(to right top, rgba(255, 187, 0, 0.938), rgba(255, 115, 0, 0.959));
+  background: linear-gradient(to right top, rgba(255, 187, 0, 0.938), rgba(255, 115, 0, 0.959));;
   border-radius: 30px;
-  margin-left: 50%;
+  border: 3px solid white;
+}
+
+.ungkep img{
+  height: 200px;
+  width: 18%;
+  padding: 20px 20px;
+  background-color: rgba(255, 115, 0, 0.959);
+  border-radius: 30px;
+  margin-top: -30vh;
+  margin-left: 90px;
+  margin-right: 70px;
+  border: 3px solid white;
+}
+
+.ungkep img, .desgado {
+  display: inline-block;
+}
+
+.sayurgado img, .desayam {
+  display: inline-block;
+}
+
+.sayurgado img {
+  height: 200px;
+  width: 15%;
+  padding: 20px 20px;
+  background-color: rgba(255, 115, 0, 0.959);
+  border-radius: 30px;
+  margin-top: -30vh;
+  margin-left: 105px;
+  margin-right: 80px;
+  border: 3px solid white;
 }
 
 .hargaayam {
   height: 55px;
   width: 280px;
   background-color: #F40000;
-  margin-top: -20px;
-  margin-left: 20px;
+  margin-top: 20px;
   border-radius: 30px;
   box-shadow: 20px ;
   text-align: center;
   transition: 0.3s;
   border: none;
   color: white;
+  border: 5px solid white;
 }
 
 
@@ -329,6 +353,25 @@ body {
   margin-right: auto;
 }
 
+.image1 img:hover{
+  transform: rotateY(360deg);
+  transition-duration: 2s;
+}
+
+.image2 img:hover {
+  transform: rotateY(360deg);
+  transition-duration: 2s;
+}
+
+.image3 img:hover {
+  transform: rotateY(360deg);
+  transition-duration: 2s;
+}
+
+.ungkep, .sayurgado{
+  border: 3px solid white;
+  border-radius:30px;
+}
 
 .point1 {
   height: 340px;
@@ -337,6 +380,15 @@ body {
   background-color: orange;
   padding: 20px 30px;
   border-radius: 30px;
+  margin:0px 20px;
+  transition-property: height;
+  transition-duration: 1s;
+}
+
+.point1:hover {
+  border: 1px solid white;
+  width: 52vh;
+  height: 370px;
 }
 
 .point1 h3 {
@@ -350,6 +402,15 @@ body {
   background-color: orange;
   padding: 20px 30px;
   border-radius: 30px;
+  margin:0px 20px;
+  transition-property: height;
+  transition-duration: 1s;
+}
+
+.point2:hover {
+  border: 1px solid white;
+  width: 52vh;
+  height: 370px;
 }
 
 .point2 h3 {
@@ -363,14 +424,24 @@ body {
   background-color: orange;
   padding: 20px 30px;
   border-radius: 30px;
+  margin:0px 20px;
+  transition-property: width, height;
+  transition-duration: 1s;
+}
+
+.point3:hover {
+  border: 1px solid white;
+  width: 52vh;
+  height: 370px;
 }
 
 .point3 h3 {
   text-align:center;
 }
 
-.point1, .point2, .point3 {
-  display: inline-block;
+.alasan {
+  display: flex;
+  justify-content: space-between;
   margin: 28px 22px;
 }
 

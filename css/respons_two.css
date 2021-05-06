@@ -1,0 +1,23 @@
+
+
+@media screen and (max-width: 600px) {
+    .hidangan {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ungkep, .sayurgado {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .hidangan {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ungkep, .sayurgado {
+        width: 500px;
+    }
+}

@@ -4,7 +4,8 @@
   
 body {
     position: relative;
-    background: linear-gradient(to right top, rgba(251, 255, 0, 0.8), rgb(255, 117, 117));
+    background: linear-gradient(to right top, #f8af4f, #ffdeaf);
+    background-repeat: no-repeat;
 }
 
 .bg{
@@ -42,61 +43,31 @@ body {
     color: red;
 }
 
-.ginsta img, .wapp img{
-    height: 50px;
-    width: 50px;
-    margin-bottom: 20px;
+.ginsta, .wapp, .face {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    padding: 0px 20px;
+    margin-top: -20px;
 }
 
-.insta, .whatsapp {
-    display:inline-block;
-    margin: 0px 20px;
-    text-align: center;
+.ginsta img, .wapp img, .face img {
+    height: 30px;
+    width: 30px;
 }
 
-.whatsapp .linki {
-    padding: 10px 30px;
-    background-color: red;
-    border: none;
-    text-decoration: none;
-    border-radius: 30px;
-    color: white;
-}
-
-.whatsapp .linki:hover {
-    background-color: rgb(250, 154, 10);
-    color: white;
-    padding: 15px 30px;
-    transition: 0.4s;
-}
-
-.insta {
-    margin-left: 360px;
-}
-
-.whatsapp {
-    margin-left: -20px;
-}
-
-.insta .linki {
-    padding: 10px 30px;
-    background-color: red;
-    border: none;
-    text-decoration: none;
-    border-radius: 30px;
-    color: white;
-}
-
-.insta .linki:hover {
-    background-color: rgb(250, 154, 10);
-    color: white;
-    padding: 15px 30px;
-    transition: 0.4s;
+.icon {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .item {
     margin-top: 20px;
     margin-bottom:95px;
+    height: 20vh;
+    width: 100%;
 }
 
 .contact {
@@ -128,7 +99,7 @@ form {
     margin-left: auto;
     margin-right: auto;
     width: 400px;
-    height:300px;
+    height:317px;
     background-color: orange;
     padding: 20px 0px;
     padding-right: 30px;
@@ -181,4 +152,11 @@ form {
   }
   .box-login input::placeholder {
     color: white;
+  }
+
+  .btn-loading {
+    width: 50%;
+    height: 60px;
+    display: flex;
+    margin-left: 10px;
   }
