@@ -353,21 +353,6 @@ body {
   margin-right: auto;
 }
 
-.image1 img:hover{
-  transform: rotateY(360deg);
-  transition-duration: 2s;
-}
-
-.image2 img:hover {
-  transform: rotateY(360deg);
-  transition-duration: 2s;
-}
-
-.image3 img:hover {
-  transform: rotateY(360deg);
-  transition-duration: 2s;
-}
-
 .ungkep, .sayurgado{
   border: 3px solid white;
   border-radius:30px;
