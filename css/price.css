@@ -46,8 +46,8 @@ body {
 .desgado, .desayam {
   text-align: justify;
   padding: 10px 30px;
-  height: 240px;
-  width: 90%;
+  height: 240px !important;
+  width: 50% !important;
   margin: 0px 28px;
   background: linear-gradient(to right top, rgba(255, 187, 0, 0.938), rgba(255, 115, 0, 0.959));;
   border-radius: 30px;
@@ -82,7 +82,7 @@ body {
   height: 500px;
 }
 
-  .hargaayam {
+  .hargaayam, .hargagado {
     height: 55px;
     width: 250px;
     background-color: #F40000;
@@ -104,38 +104,13 @@ body {
     padding:10px 20px;
   }
   
-  .hargaayam:hover {
+  .hargaayam:hover, .hargagado:hover {
     box-shadow: 20px #ffff;
     background-color: rgb(250, 246, 10);
     height: 58px;
     width: 285px;
     cursor: pointer;
     transition: 0.3s;
-    color: red;
-  }
-  
-  .hargagado {
-    height: 55px;
-    width: 250px;
-    background-color: #F40000;
-    margin-top: -10px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 30px;
-    text-align: center;
-    transition: 0.3s;
-    border: none;
-    color: white;
-    border: 5px solid white;
-  }
-  
-  .hargagado:hover {
-    box-shadow: 20px #ffff;
-    transition: 0.3s;
-    background-color: rgb(250, 246, 10);
-    height: 58px;
-    width: 285px;
-    cursor: pointer;
     color: red;
   }
 
